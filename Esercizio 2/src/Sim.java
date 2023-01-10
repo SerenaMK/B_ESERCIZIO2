@@ -15,6 +15,7 @@ public class Sim {
 		this.numero = numero;
 		this.credito = credito;
 		this.chiamate = chiamate;
+		
 	}
 	
 	public void stampaDato() {
