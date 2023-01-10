@@ -1,23 +1,23 @@
 
 public class Rettangolo {
-	double altezza;
-	double larghezza;
+	int altezza;
+	int larghezza;
 	
-	public Rettangolo(double altezza, double larghezza) {
+	public Rettangolo(int altezza, int larghezza) {
 		this.altezza = altezza;
 		this.larghezza = larghezza;
 	}
 	
-	public double area () {
+	public int area () {
 		return this.larghezza * this.altezza;
 	}
-	public double perimetro () {
+	public int perimetro () {
 		return (this.larghezza*2) + (this.altezza*2);
 	}
 	
 	public void stampaRettangolo(Rettangolo rett) {		
-		System.out.println("Area:" + rett.area());
-		System.out.println("Perimetro:" + rett.perimetro());
+		System.out.println("Area: " + rett.area());
+		System.out.println("Perimetro: " + rett.perimetro());
 		
 	}
 	
@@ -27,8 +27,8 @@ public class Rettangolo {
 		System.out.println("\nRettangolo 2");
 		this.stampaRettangolo(due);
 		
-		double sommaAree = uno.area() + due.area();
-		double sommaPerimetri = uno.perimetro() + due.perimetro();
+		int sommaAree = uno.area() + due.area();
+		int sommaPerimetri = uno.perimetro() + due.perimetro();
 		
 		System.out.println("\nSomma aree: " + sommaAree);
 		System.out.println("Somma perimetri: " + sommaPerimetri);
